@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  
+</head>
+
+<body id="Story_Page">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12 pb-3">
+        <h1>My Stories</h1>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-6 col-xl-3">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" src="https://via.placeholder.com/350X225" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam porro molestiae
+              facilis quod similique voluptas.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                  data-target="#EditStory">Edit</button>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade edit-story" id="EditStory" tabindex="-1" role="dialog" aria-labelledby="EditStory"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header align-items-center">
+            <h2 class="text-primary text-md-center my-0 flex-fill">Edit Story</h2>
+            <div class="d-inline-block align-middle edit-story-dropdown mr-2">
+              <div class="dropdown">
+                <a href="" title="Style" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="53" height="17" viewBox="0 0 53 17" fill="none">
+                    <g filter="url(#filter0_d)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 4.5C13 6.98528 10.9853 9 8.5 9C6.01472 9 4 6.98528 4 4.5C4 2.01472 6.01472 0 8.5 0C10.9853 0 13 2.01472 13 4.5ZM31 4.5C31 6.98528 28.9853 9 26.5 9C24.0147 9 22 6.98528 22 4.5C22 2.01472 24.0147 0 26.5 0C28.9853 0 31 2.01472 31 4.5ZM49 4.5C49 6.98528 46.9853 9 44.5 9C42.0147 9 40 6.98528 40 4.5C40 2.01472 42.0147 0 44.5 0C46.9853 0 49 2.01472 49 4.5Z" fill="#3A3A3A"/>
+                    
+                    </g>
+                    <defs>
+                    <filter id="filter0_d" x="0" y="0" width="53" height="17" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                    </filter>
+                    </defs>
+                    </svg>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <a title="Change Owner" class="dropdown-item" href="#">Change Owner</a>
+                  <a title="Delete" class="dropdown-item" href="#">Delete</a>
+
+                </div>
+              </div>
+
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 31" role="img" focusable="false">
+                <defs></defs>
+                <path fill="#484848" fill-rule="evenodd"
+                  d="M29.35 1.358a2 2 0 010 2.828L18.034 15.5l11.314 11.315a2 2 0 11-2.828 2.828L15.206 18.328 3.893 29.642a2 2 0 11-2.828-2.828l11.313-11.315L1.065 4.186a2 2 0 112.828-2.828L15.206 12.67 26.521 1.358a2 2 0 012.828 0z">
+                </path>
+              </svg></button>
+          </div>
+          <div class="modal-body">
+            <div class="media user-profile">
+              <img class="mr-3 profile-img" src="assets/img/Profile-img.png" alt="Profile Picture">
+              <div class="media-body">
+                <h3 class="pb-md-2 mb-0" >Justine Marshall</h3>
+                <ul class="list-unstyled custom-select">
+                  <li class="init"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28" fill="none">
+                    <g filter="url(#filter0_d)">
+                    <path d="M19.875 8.75H18.9375V5.9375C18.9375 2.66406 16.2734 0 13 0C9.72656 0 7.0625 2.66406 7.0625 5.9375V8.75H6.125C5.08984 8.75 4.25 9.58984 4.25 10.625V18.125C4.25 19.1602 5.08984 20 6.125 20H19.875C20.9102 20 21.75 19.1602 21.75 18.125V10.625C21.75 9.58984 20.9102 8.75 19.875 8.75ZM15.8125 8.75H10.1875V5.9375C10.1875 4.38672 11.4492 3.125 13 3.125C14.5508 3.125 15.8125 4.38672 15.8125 5.9375V8.75Z" fill="white"/>
+                    
+                    </g>
+                    <defs>
+                    <filter id="filter0_d" x="0.25" y="0" width="25.5" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                    </filter>
+                    </defs>
+                    </svg> Only Me</li>
+                  <li data-value="value 1"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28" fill="none">
+                    <g filter="url(#filter0_d)">
+                    <path d="M19.875 8.75H18.9375V5.9375C18.9375 2.66406 16.2734 0 13 0C9.72656 0 7.0625 2.66406 7.0625 5.9375V8.75H6.125C5.08984 8.75 4.25 9.58984 4.25 10.625V18.125C4.25 19.1602 5.08984 20 6.125 20H19.875C20.9102 20 21.75 19.1602 21.75 18.125V10.625C21.75 9.58984 20.9102 8.75 19.875 8.75ZM15.8125 8.75H10.1875V5.9375C10.1875 4.38672 11.4492 3.125 13 3.125C14.5508 3.125 15.8125 4.38672 15.8125 5.9375V8.75Z" fill="white"/>
+                    
+                    </g>
+                    <defs>
+                    <filter id="filter0_d" x="0.25" y="0" width="25.5" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                    </filter>
+                    </defs>
+                    </svg> Only Me</li>
+                  <li data-value="value 2"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28" fill="none">
+                    <g filter="url(#filter0_d)">
+                    <path d="M19.875 8.75H18.9375V5.9375C18.9375 2.66406 16.2734 0 13 0C9.72656 0 7.0625 2.66406 7.0625 5.9375V8.75H6.125C5.08984 8.75 4.25 9.58984 4.25 10.625V18.125C4.25 19.1602 5.08984 20 6.125 20H19.875C20.9102 20 21.75 19.1602 21.75 18.125V10.625C21.75 9.58984 20.9102 8.75 19.875 8.75ZM15.8125 8.75H10.1875V5.9375C10.1875 4.38672 11.4492 3.125 13 3.125C14.5508 3.125 15.8125 4.38672 15.8125 5.9375V8.75Z" fill="white"/>
+                    
+                    </g>
+                    <defs>
+                    <filter id="filter0_d" x="0.25" y="0" width="25.5" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                    </filter>
+                    </defs>
+                    </svg> Public</li>
+                 
+              </ul>
+              </div>
+            </div>
+            <div class="story-description py-3 py-md-5">
+              <div class="d-flex justify-content-between align-items-center pb-1 pb-xl-4">
+                <h3 class="mb-0 sub-h3">The Politics of Pendamic…</h3>
+                <svg class="smile-icon" fill="none" viewBox="0 0 41 40" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8951 0.0957732C9.37707 0.956535 2.19349 7.44233 0.431202 15.8634C-1.24575 23.8765 2.0516 31.9721 8.87645 36.5977C10.0501 37.3931 12.3891 38.5437 13.7278 38.984C16.2857 39.8254 19.2684 40.1554 21.9088 39.8892C27.9282 39.2822 33.2976 36.0451 36.6725 30.9886C37.423 29.8642 38.5583 27.5362 38.9842 26.2481C39.3827 25.043 39.7823 23.1503 39.8652 22.076C39.8974 21.6577 39.9602 21.2929 40.0047 21.2655C40.0492 21.238 40.0856 20.6155 40.0856 19.8822C40.0856 19.1488 40.049 18.5715 40.0043 18.5991C39.9595 18.6267 39.8967 18.31 39.8647 17.8951C39.7827 16.8318 39.3818 14.93 38.9858 13.7261C38.5454 12.3874 37.3948 10.0484 36.5994 8.87473C32.7819 3.24235 26.5064 -0.0750902 19.8136 0.00129081C19.2037 0.00824281 18.3403 0.0507252 17.8951 0.0957732ZM17.7999 2.13197C13.4862 2.66111 9.29517 4.86273 6.51012 8.06254C-0.694928 16.3406 0.945867 28.9088 10.0196 34.9448C16.1319 39.0107 23.9236 38.9913 30.038 34.8948C34.4647 31.9289 37.2998 27.1928 37.8896 21.7781C38.499 16.184 36.175 10.2462 31.9139 6.51026C28.0398 3.1135 22.8706 1.50997 17.7999 2.13197ZM14.7798 9.71119C14.0717 10.0615 13.5943 11.0663 13.3981 12.6193C13.1945 14.2296 13.6758 16.0723 14.4924 16.8103C14.8368 17.1214 14.912 17.149 15.2958 17.1058C15.9976 17.0266 16.5133 16.3784 16.9078 15.0798C17.1692 14.2193 17.1516 12.3509 16.8738 11.4648C16.3886 9.91692 15.6367 9.28719 14.7798 9.71119ZM24.2786 9.6793C23.8082 9.91606 23.3598 10.558 23.1102 11.3521C22.9275 11.9334 22.8955 12.2439 22.8979 13.4172C22.9003 14.6047 22.9308 14.8825 23.1157 15.4009C23.6566 16.9169 24.487 17.4869 25.325 16.9172C25.7344 16.6388 26.2332 15.7274 26.4166 14.9223C26.6006 14.1138 26.6015 12.5023 26.4181 11.7249C26.1636 10.6451 25.6322 9.84959 25.0079 9.61378C24.6633 9.48349 24.6682 9.48311 24.2786 9.6793ZM0.0293465 19.9886C0.0293465 20.7481 0.0449534 21.0589 0.0639534 20.6791C0.0828534 20.2993 0.0828534 19.678 0.0639534 19.2982C0.0449534 18.9184 0.0293465 19.2291 0.0293465 19.9886ZM5.74157 19.8915C5.63099 19.9362 5.44383 20.0941 5.32573 20.2426C5.12811 20.4909 5.11579 20.5769 5.17046 21.322C5.40522 24.5245 7.05431 27.9166 9.57708 30.3861C11.5936 32.3601 13.9797 33.6568 16.8475 34.3375C18.3328 34.6901 20.7417 34.7524 22.3379 34.4794C25.6054 33.9209 28.4702 32.4012 30.7673 30.008C33.0705 27.6084 34.5979 24.3123 34.8179 21.2666C34.8721 20.5158 34.8667 20.4894 34.5954 20.1858C34.029 19.5518 32.9695 19.7516 32.7613 20.5317C32.7082 20.7306 32.598 21.3191 32.5162 21.8394C31.3395 29.3275 23.5592 34.145 16.2761 31.8952C11.6881 30.478 8.22146 26.5248 7.46355 21.8458C7.22565 20.3769 7.16234 20.1941 6.81853 19.9844C6.49977 19.7901 6.08185 19.7541 5.74157 19.8915Z" fill="black"/>
+                  </svg>
+              </div>
+            <div class="form-group mb-0  mb-xl-3">
+              <label for="Description" class="sr-only">Enter Description</label>
+              <input type="text" placeholder="Enter Description" class="form-control border-0 px-0" id="Description">
+            </div>
+            </div>
+            <div class="story-cover">
+              <div class="img-crop-action">
+                <a href="javascript:;" class="btn btn-white mr-1 mr-md-2"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+
+                  <path d="M19.0625 13.7891H17.5V4.30859L19.7266 2.08203C20.0938 1.71484 20.0938 1.12109 19.7266 0.757812L19.2852 0.3125C18.918 -0.0546875 18.3242 -0.0546875 17.9609 0.3125L15.7344 2.53906H6.25V0.976562C6.25 0.457031 5.83203 0.0390625 5.3125 0.0390625H3.4375C2.91797 0.0390625 2.5 0.457031 2.5 0.976562V2.53906H0.9375C0.417969 2.53906 0 2.95703 0 3.47656V5.35156C0 5.87109 0.417969 6.28906 0.9375 6.28906H2.5V16.6016C2.5 17.1211 2.91797 17.5391 3.4375 17.5391H13.75V19.1016C13.75 19.6211 14.168 20.0391 14.6875 20.0391H16.5625C17.082 20.0391 17.5 19.6211 17.5 19.1016V17.5391H19.0625C19.582 17.5391 20 17.1211 20 16.6016V14.7266C20 14.207 19.582 13.7891 19.0625 13.7891ZM11.9805 6.28906L6.25 12.0195V6.28906H11.9805ZM8.01953 13.7891L13.75 8.05859V13.7891H8.01953Z" fill="black"/>
+                  </svg>  <span class="d-none d-md-inline-block ml-1">  Crop </span></a>
+                <a href="" class="">
+                  <svg width="45" height="45" viewBox="0 0 59 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7304 0.186874C18.4824 0.535874 17.6734 0.989873 15.8824 4.02587C14.0714 7.09387 13.3864 7.46787 9.58435 7.46787C6.78235 7.46787 4.41337 8.17887 2.68337 9.54087L0.0483584 11.6129V28.8659C0.0483584 52.3559 -2.47364 50.4679 28.9084 50.4679H53.1394L55.5934 48.0129C58.0024 45.6049 58.0474 45.2509 58.0164 29.2629C57.9944 18.0329 57.6064 12.4749 56.7664 11.3809C54.8234 8.84987 51.4794 7.46787 47.2994 7.46787C43.8494 7.46787 43.2334 7.07987 41.7494 3.96787C40.2294 0.779872 39.7004 0.466872 35.8144 0.453872C33.4684 0.446872 30.6484 0.293873 29.5484 0.115873C28.4484 -0.0631269 25.3804 -0.0311259 22.7304 0.186874ZM22.2894 17.4629C12.2294 23.5959 12.9304 36.8739 23.5634 41.5779C29.3994 44.1589 34.5534 42.9349 38.9574 37.9189C41.4794 35.0469 42.0474 33.5299 42.0444 29.6829C42.0354 18.4939 31.3944 11.9109 22.2894 17.4629ZM23.0944 23.2679C19.7184 26.6439 19.3244 29.1659 21.5114 33.3959C23.1764 36.6159 24.8384 37.4679 29.4554 37.4679C33.8194 37.4679 37.0484 33.9789 37.0484 29.2639C37.0484 24.6009 34.4484 21.5509 29.8444 20.8139C26.6424 20.3019 25.7284 20.6339 23.0944 23.2679Z" fill="#FA8966"/>
+                  </svg>
+                  </a>
+              </div>
+              <img src="assets/img/Cover-img.png" alt="" class="img-fluid">
+            </div>
+            <div class="form-group pt-4"> <label for="Select_Category" class="sr-only"> Select Category </label>  <select class="form-control select2 select2-hidden-accessible" multiple="" data-placeholder="Select Category" style="width: 100%;" tabindex="-1" aria-hidden="true" id="Select_Category">
+              <option>Travel</option>
+              <option>Entertainment</option>
+              <option>Lifestyle</option>
+              <option>Parenting</option>
+              <option>Technology</option>
+              <option>Sports</option>
+             
+          </select> </div>
+
+          </div>
+          <div class="modal-footer p-0">
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+            <button type="button"  data-dismiss="modal" class="btn btn-primary btn-block m-0 py-2">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/jquery-3.2.1.slim.min.js"><\/script>')</script>
+  <script src="assets/js/popper.min.js"> </script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <noscript>Your browser does not support JavaScript!</noscript>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+// Fonts
+$primary:#40c2c0;
+$lt-gray: #d7d7d7;
+$off-white: hsl(0, 0%, 90%);
+$dropdown-color: #3A3A3A;
+$color-muted: #778D99;
+$input-color:#292929;
+$theme-colors: (
+  "primary": #2AAEE4,
+  "black":#000,
+  "white":#fff
+
+);
+// For a list of Bootstrap variables you can override, look at node_modules\bootstrap\scss\_variables.scss
+
+// These are the defaults, but you can override any values
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-base:       $font-family-sans-serif ;
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 540px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1600px,
+    xxxl: 1900px
+);
+$container-max-widths: (
+  md: 720px,
+  lg: 960px,
+  xl:1140px,
+  xxl: 1440px,
+  xxxl: 1620px
+);
+$spacer: 1rem;
+$spacers:
+(
+1: ($spacer * .5),
+2: $spacer,
+3: ($spacer * 1.5),
+4: ($spacer * 2),
+5: ($spacer * 3),
+6: ($spacer * 5)
+);
+$enable-caret: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-prefers-reduced-motion-media-query: true !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+$enable-validation-icons: true !default;
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$h1-font-size:$font-size-base * 2.7 !default;
+$h2-font-size:$font-size-base * 2.5 !default;
+$h3-font-size:$font-size-base * 1.8 !default;
+$h4-font-size:$font-size-base * 1.1 !default;
+$h5-font-size:$font-size-base * 1 !default;
+$h6-font-size:$font-size-base !default;
+$input-btn-padding-y:         .5rem !default;
+$input-btn-padding-x:         1rem !default;
+$enable-responsive-font-sizes: true;
+// $btn-font-size:               $font-size-base !default;
+// Variables
